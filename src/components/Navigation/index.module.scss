@@ -1,0 +1,47 @@
+.root {
+  position: relative;
+  background-color: var(--background-surface-color);
+  box-shadow: var(--shadow);
+}
+.theme {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  display: inline-block;
+  line-height: 24px;
+  padding: 16px;
+  a {
+    color: var(--text-color);
+  }
+  &:hover a {
+    color: var(--color-primary-lighter)
+  }
+  &.active a {
+    color: var(--color-primary)
+  }
+}
+
+.toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.home {
+  position: relative;
+  padding-left: 24px;
+  .brand {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
